@@ -4,7 +4,8 @@ public class Udp_c {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+				//udp实现广播
+		
 	}
 
 }
