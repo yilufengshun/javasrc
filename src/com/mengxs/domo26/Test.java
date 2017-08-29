@@ -3,6 +3,7 @@ package com.mengxs.domo26;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 public class Test {
 
@@ -80,6 +81,10 @@ public class Test {
 		// 得到变量
 		// class3
 		Field[] f = class3.getFields();
+		for (Field field : f) {
+			System.out.println(field);
+		}
+		System.out.println("-------------------------");
 		// 只能获取到公开的方法
 		Field[] f2 = class3.getDeclaredFields();
 		for (Field field : f2) {
@@ -87,6 +92,7 @@ public class Test {
 		}
 		//
 		Field f31 = class3.getDeclaredField("id");
+	
 		f31.setAccessible(true);
 		f31.set(object2, 99);
 		// 也有setint方法
@@ -103,6 +109,7 @@ public class Test {
 		// Method m41=class4.getMethod("main",String[].class);
 		// 调用另一个类的main方法
 		// m41.invoke(null,(Object)new String[]{"123","adf"});
-		
+		Class c1=Void.class;
+		System.out.println(Arrays.toString(class3.getClass().getInterfaces()));
 	}
 }

@@ -16,7 +16,6 @@ public class MyHandle extends DefaultHandler{
 		private Student student=null;
 		private ArrayList<Student>  list=null;
 		private String tag;
-		TreeSet<E>
 		@Override
 		public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 			System.out.println("startE正在解析 "+qName);
@@ -35,7 +34,7 @@ public class MyHandle extends DefaultHandler{
 				if("age".equals(name)){
 					student.setAge(Integer.parseInt(value));
 				}
-				File
+			
 			}
 			
 		}

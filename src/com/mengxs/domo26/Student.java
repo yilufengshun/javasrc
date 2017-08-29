@@ -1,6 +1,6 @@
 package com.mengxs.domo26;
 
-public class Student {
+public class Student extends Person{
 		 public Student(int id, String name, String gender) {
 		super();
 		this.id = id;
